@@ -14,7 +14,7 @@
   <Support>https://github.com/ckuburlis/homebridge-docker</Support>
   <Registry>https://registry.hub.docker.com/u/ckuburlis/homebridge-docker/</Registry>
   <GitHub>https://github.com/ckuburlis/homebridge-docker</GitHub>
-  <Repository>binhex/arch-deluge</Repository>
+  <Repository>ckuburlis/homebridge-docker</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
     <Networking>
