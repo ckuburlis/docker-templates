@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+<Beta>False</Beta>
+<Category>Home Automation:</Category>
+  <Name>homebridge</Name>
+  <Description>
+  Homebridge is a lightweight NodeJS server you can run on your home network that emulates the iOS HomeKit API. It supports Plugins, which are community-contributed modules that provide a basic bridge from HomeKit to various 3rd-party APIs provided by manufacturers of "smart home" devices.
+    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
+    [b]/config[/b] This is where homebridge will store it's configuration files.[br]
+  </Description>
+  <Overview>
+  Homebridge is a lightweight NodeJS server you can run on your home network that emulates the iOS HomeKit API. It supports Plugins, which are community-contributed modules that provide a basic bridge from HomeKit to various 3rd-party APIs provided by manufacturers of "smart home" devices.
+  </Overview>
+  <Support>https://github.com/ckuburlis/homebridge-docker</Support>
+  <Registry>https://registry.hub.docker.com/u/ckuburlis/homebridge-docker/</Registry>
+  <GitHub>https://github.com/ckuburlis/homebridge-docker</GitHub>
+  <Repository>binhex/arch-deluge</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+    <Networking>
+    <Mode>host</Mode>
+    <Publish>	  	  
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name></Name>
+      <Value></Value>
+    </Variable>
+  </Environment>    
+  <Data>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/homebridge</HostDir>
+      <ContainerDir>/root/.homebridge/</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI></WebUI>
+  <Banner></Banner>
+  <Icon>https://raw.githubusercontent.com/ckuburlis/docker-templates/master/ckuburlis/images/homekit-icon.png</Icon>
+</Containers>
