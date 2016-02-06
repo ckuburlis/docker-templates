@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Containers>
 <Beta>False</Beta>
-<Category>Home Automation:</Category>
+<Category>HomeAutomation:</Category>
   <Name>homebridge</Name>
   <Description>
   Homebridge is a lightweight NodeJS server you can run on your home network that emulates the iOS HomeKit API. It supports Plugins, which are community-contributed modules that provide a basic bridge from HomeKit to various 3rd-party APIs provided by manufacturers of "smart home" devices.
@@ -22,12 +22,7 @@
     <Publish>	  	  
     </Publish>
   </Networking>
-  <Environment>
-    <Variable>
-      <Name></Name>
-      <Value></Value>
-    </Variable>
-  </Environment>    
+  <Environment></Environment>    
   <Data>
     <Volume>
       <HostDir>/mnt/cache/appdata/homebridge</HostDir>
