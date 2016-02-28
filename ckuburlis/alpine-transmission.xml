@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Beta>False</Beta>
+  <Category>Downloaders:</Category>
+  <Name>alpine-transmission</Name>
+  <Description>
+    Transmission is a BitTorrent client which features a variety of user interfaces on top of a cross-platform back-end.
+  </Description>
+  <Overview>
+    Transmission is a BitTorrent client which features a variety of user interfaces on top of a cross-platform back-end.
+  </Overview>
+  <Support>https://github.com/ckuburlis/alpine-transmission/issues</Support>
+  <Registry>https://registry.hub.docker.com/u/ckuburlis/alpine-transmission/</Registry>
+  <GitHub>https://github.com/ckuburlis/alpine-transmission</GitHub>
+  <Repository>ckuburlis/alpine-transmission</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>9091</HostPort>
+        <ContainerPort>9091</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>9091</HostPort>
+        <ContainerPort>9091</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>51413</HostPort>
+        <ContainerPort>51413</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>51413</HostPort>
+        <ContainerPort>51413</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment></Environment>    
+  <Data>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/transmission-daemon</HostDir>
+      <ContainerDir>/root/.config/transmission-daemon/</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI>http://[IP]:[PORT:9091]/</WebUI>
+  <Banner></Banner>
+  <Icon>https://raw.githubusercontent.com/ckuburlis/docker-templates/master/ckuburlis/images/transmission-icon.png</Icon>
+</Containers>
