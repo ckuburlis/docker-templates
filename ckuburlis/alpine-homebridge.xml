@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Beta>False</Beta>
+  <Category>HomeAutomation:</Category>
+  <Name>homebridge</Name>
+  <Description>
+    Homebridge is a lightweight NodeJS server you can run on your home network that emulates the iOS HomeKit API. It supports Plugins, which are community-contributed modules that provide a basic bridge from HomeKit to various 3rd-party APIs provided by manufacturers of "smart home" devices.
+    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
+    [b]/root/.homebridge[/b] This is where homebridge will store it's configuration files.[br]
+  </Description>
+  <Overview>
+    Homebridge is a lightweight NodeJS server you can run on your home network that emulates the iOS HomeKit API. It supports Plugins, which are community-contributed modules that provide a basic bridge from HomeKit to various 3rd-party APIs provided by manufacturers of "smart home" devices.
+  </Overview>
+  <Support>https://github.com/ckuburlis/homebridge-docker/issues</Support>
+  <Registry>https://registry.hub.docker.com/u/ckuburlis/alpine-homebridge/</Registry>
+  <GitHub>https://github.com/ckuburlis/homebridge-docker</GitHub>
+  <Repository>ckuburlis/homebridge-docker</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>5353</HostPort>
+        <ContainerPort>5353</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>5353</HostPort>
+        <ContainerPort>5353</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>51826</HostPort>
+        <ContainerPort>51826</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>51826</HostPort>
+        <ContainerPort>51826</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment></Environment>    
+  <Data>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/homebridge</HostDir>
+      <ContainerDir>/root/.homebridge/</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI></WebUI>
+  <Banner></Banner>
+  <Icon>https://raw.githubusercontent.com/ckuburlis/docker-templates/master/ckuburlis/images/homekit-icon.png</Icon>
+</Containers>
