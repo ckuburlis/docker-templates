@@ -18,28 +18,8 @@
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Networking>
-    <Mode>bridge</Mode>
+    <Mode>host</Mode>
     <Publish>
-      <Port>
-        <HostPort>5353</HostPort>
-        <ContainerPort>5353</ContainerPort>
-        <Protocol>udp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>5353</HostPort>
-        <ContainerPort>5353</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>51826</HostPort>
-        <ContainerPort>51826</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>51826</HostPort>
-        <ContainerPort>51826</ContainerPort>
-        <Protocol>udp</Protocol>
-      </Port>
     </Publish>
   </Networking>
   <Environment></Environment>    
