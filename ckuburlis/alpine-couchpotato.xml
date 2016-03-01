@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Beta>False</Beta>
+<Category>Downloaders: MediaApp:Video</Category>
+  <Name>alpine-couchpotato</Name>
+  <Description>
+    CouchPotato (CP) is an automatic NZB and torrent downloader. You can keep a "movies I want"-list and it will search for NZBs/torrents of these movies every X hours. Once a movie is found, it will send it to SABnzbd or download the torrent to a specified directory.[br][br]
+    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
+    [b]/config[/b] This is where couchpotato will store it's configuration file, database and logs.[br]
+    [b]/data[/b] This path is used retrieve the downloaded files by your downloader application.[br]
+    [b]/media[/b] This is where couchpotato will scan for media files.
+  </Description>
+  <Overview>
+    CouchPotato (CP) is an automatic NZB and torrent downloader. You can keep a "movies I want"-list and it will search for NZBs/torrents of these movies every X hours. Once a movie is found, it will send it to SABnzbd or download the torrent to a specified directory.
+  </Overview>
+    <Support>https://github.com/ckuburlis/alpine-couchpotato/issues</Support>
+  <Registry>https://registry.hub.docker.com/u/ckuburlis/alpine-couchpotato/</Registry>
+  <GitHub>https://github.com/ckuburlis/alpine-couchpotato</GitHub>
+  <Repository>ckuburlis/alpine-couchpotato</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+    <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>5050</HostPort>
+        <ContainerPort>5050</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment></Environment>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/couchpotato</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>path for downloads</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>path to media</HostDir>
+      <ContainerDir>/media</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI>http://[IP]:[PORT:5050]/</WebUI>
+  <Banner>https://raw.githubusercontent.com/ckuburlis/docker-templates/master/ckuburlis/images/couchpotato-banner.png</Banner>
+  <Icon>https://raw.githubusercontent.com/ckuburlis/docker-templates/master/ckuburlis/images/couchpotato-icon.png</Icon>
+</Containers>
