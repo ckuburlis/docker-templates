@@ -33,7 +33,7 @@
   <Data>
     <Volume>
       <HostDir>/mnt/cache/appdata/couchpotato</HostDir>
-      <ContainerDir>/config</ContainerDir>
+      <ContainerDir>/root/.couchpotato</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
