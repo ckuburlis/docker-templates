@@ -12,7 +12,7 @@
     Homebridge is a lightweight NodeJS server you can run on your home network that emulates the iOS HomeKit API. It supports Plugins, which are community-contributed modules that provide a basic bridge from HomeKit to various 3rd-party APIs provided by manufacturers of "smart home" devices.
   </Overview>
   <Support>https://github.com/ckuburlis/homebridge-docker/issues</Support>
-  <Registry>https://registry.hub.docker.com/u/ckuburlis/alpine-homebridge/</Registry>
+  <Registry>https://hub.docker.com/r/ckuburlis/homebridge-docker/</Registry>
   <GitHub>https://github.com/ckuburlis/homebridge-docker</GitHub>
   <Repository>ckuburlis/homebridge-docker</Repository>
   <BindTime>true</BindTime>
